@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/logo nav.png" class="logo" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          
+          <h1>
+            Hi, I'm <span>Akbar N.I</span> <br />
+            from indonesia
+          </h1>
+          <p>Universitas Pasundan</p>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container" >
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/user about.jpg" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias recusandae eaque dolorum dolores rerum magni iure ratione, qui esse asperiores ipsa? Odio amet quibusdam deleniti nihil corrupti temporibus minima!</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>--</span><br />--</li>
+                <li><span>--</span><br />--</li>
+                <li><span>--</span><br />--</li>
+              </ul>
+            </div>
+            <div class="tab-contents " id="Education">
+              <ul>
+                <li><span>2010</span><br />SD</li>
+                <li><span>2016</span><br />SMP</li>
+                <li><span>2019</span><br />SMK</li>
+              </ul>
+            </div>
+            <div class="tab-contents " id="Experience">
+              <ul>
+                <li><span>Pkl di hotel 3 bulan</span><br />house keeping</li>
+                <li><span>--</span><br />--</li>
+                <li><span>--</span><br />--</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hobi -->
+
+    <div class="box-hobi" id="hobi">
+      <h1>Hobi</h1>
+      <hr/ class="split">
+      <div class="cards">
+        <div class="card" data-aos="fade-down">
+          <img src="image/hobby1.jpeg" alt="">
+        </div>
+        <div class="card" data-aos="fade-up">
+          <img src="image/hobby2.jpeg" alt="">
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img src="image/hobby 3.jpg" alt="">
+        </div>
+    </div>
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>If You Have Any Project In Your Mind.</h4>
+        <p>I'm a UI/UX Designer - creating bold & brave interface design for companies all across the world.</p>
+        <div class="list">
+          <li><a href="#">0895344475566</a></li>
+          <li><a href="#">akbarnuiman3@gmail.com</a></li>
+          <li><a href="#">Instagram akbarnurrr_</a></li>
+          <li><a href="#">Follow me on Social Media!</a></li>
+        </div>
+  
+        <div class="contact-icons">
+          <a href="#"><i class='bx bxl-whatsapp-square'></i></i></a>
+          
+          <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+          <a href="#"><i class='bx bxl-facebook-square'></i></i></a>
+        </div>
+      </div>
+
+    <div>
+      <div class="container-contact" id="contact">
+        <h1>Contact</h1>
+        <hr class="split" />
+  
+        <form action="" method="post">
+          <label for="">Name</label>
+          <input type="text" placeholder="Name" />
+  
+          <label for="">Phone Number</label>
+          <input type="text" placeholder="0****" />
+  
+          <label for="">Email</label>
+          <input type="text" placeholder="example@gmail.com" />
+  
+          <label for="">Message</label>
+          <textarea rows="8" cols="80" placeholder="Message"></textarea>
+  
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2022 by Akbar   </p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    </script>
+ 
+ <script>
+  AOS.init();
+</script>
+</body>
+</html>
